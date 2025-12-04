@@ -33,6 +33,10 @@ local filetype_table = {
     ["gsh"] = languages.groovy,
     ["dart"] = languages.dart,
     ["r"] = languages.r,
+    ["ml"] = languages.ocaml,
+    ["mli"] = languages.ocaml,
+    ["nim"] = languages.nim,
+    ["zig"] = languages.zig,
 }
 
 return filetype_table

@@ -147,4 +147,25 @@ languages.r = function()
     }
 end
 
+languages.ocaml = function()
+    return {
+        block = { start = "(*", line = "*", ["end"] = "*)" },
+        line = nil,
+    }
+end
+
+languages.nim = function()
+    return {
+        block = nil,
+        line = { start = nil, line = "#", ["end"] = nil },
+    }
+end
+
+languages.zig = function()
+    return {
+        block = nil,
+        line = { start = nil, line = "//", ["end"] = nil },
+    }
+end
+
 return languages
